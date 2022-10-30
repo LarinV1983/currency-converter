@@ -23,10 +23,15 @@ function App() {
   }, []);
 
   const onChangeFromPrice = (value) => {
+    const price = value / rates[fromCurrency];
+    const result = price * rates[toCurrency];
     setFromPrice(value);
+    setToPrice(result);
   };
 
   const onChangeToPrice = (value) => {
+    const priceСurrency = (rates[fromCurrency] / rates[toCurrency]) * value;
+    setFromPrice(priceСurrency);
     setToPrice(value);
   };
 
