@@ -35,6 +35,14 @@ function App() {
     setToPrice(value);
   };
 
+  React.useEffect(() => {
+   onChangeFromPrice(fromPrice);
+  }, [fromCurrency, fromPrice]);
+
+  React.useEffect(() => {
+   onChangeToPrice(toPrice);
+  }, [toCurrency, toPrice]);
+
   return (
     <div className="App">
     <Block 
