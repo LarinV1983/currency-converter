@@ -21,8 +21,12 @@ export default function Block({ value, currency, onChangeValue, onChangeCurrency
         </svg>
 				</li>
 			</ul>
-			<input onChange={(e) => onChangeValue(e.target.value)}
-      value={value} type="number" placeholder={0} />
+			<input 
+			onChange={(e) => onChangeValue(e.target.value)}
+      value={value} 
+      type="number" 
+      placeholder={0} 
+      />
 		</div>
 	);
 }
