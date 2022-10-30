@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+* {
+  font-family: 'Inter', system-ui !important;
+  box-sizing: border-box;
+  user-select: none;
+}
+
 .App {
   display: grid;
   grid-template-columns: 1fr 1fr;
